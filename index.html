@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>標題</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">每周精選</a>
+                    <a href="course.html" class="nav-item nav-link">核心課程</a>
+                    <a href="advanced.html" class="nav-item nav-link">進階課程</a>
+                    <a href="service.html" class="nav-item nav-link">主題樂園</a>
+                    <a href="contact.html" class="nav-item nav-link">迷路森林</a>
+                    <a href="contact.html" class="nav-item nav-link">挑戰擂台</a>
+                    <a href="contact.html" class="nav-item nav-link">聯絡我們</a>
+                </div>
+                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">登入</a>
+            </div>
+        </nav>
+
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/banner-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Multicenter Interactive Learning System of Chest Images and Chest Diseases</h5>
+                            <h3 class="display-2 text-white mb-md-4 animated zoomIn">多中心互動式胸腔影像<br>及胸腔疾病學習系統</h3>
+                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">馬上登入</a>
+                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/banner-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">2022-04-26 (二) 19:30 ~ 21:00</h5>
+                            <h4 class="display-2 text-white mb-md-4 animated zoomIn">Locally Advanced<br>Lung Cancer Workshop</h4>
+                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">了解詳情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <div class="container-fluid col-12 mt-3">
+        <div class="row">
+            <div class="col-4">
+                <div class="text-center wow fadeInUp title" data-wow-delay="0.1s">
+                    <h6 class="bg-white text-center text-primary px-3">布告欄</h6>
+                    <h2 class="mb-4 ">最新消息</h2>
+                </div>
+                <div class="table-responsive  border border-3 rounded-3" style="margin-left:5%; margin-right: 5%;min-height: 460px;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">公告</th>
+                                <th scope="col">發布日期</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="table-number">1</th>
+                                <td><a class="data-bs-toggle="modal" data-bs-target="#exampleModal">【全線上會議】<br>111年06月11日(星期六) 跨科多領域討論會南區</a></td>
+                                <td  class="table-number">05-24</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-number">2</th>
+                                <td><a class="data-bs-toggle="modal" data-bs-target="#exampleModal">【線上報名】<br>111年05月24日(二) Meet the KEY Experts (線上會議)</a></td>
+                                <td  class="table-number">05-24</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-number">3</th>
+                                <td><a class="data-bs-toggle="modal" data-bs-target="#exampleModal">【線上會議】<br>111年06月12日(星期日) International Thoracic Forum</a></td>
+                                <td  class="table-number">05-20</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-number">4</th>
+                                <td><a class="data-bs-toggle="modal" data-bs-target="#exampleModal">【線上會議】<br>111年05月22日(日) 肺腫瘤核心課程</a></td>
+                                <td class="table-number">05-20</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-number">5</th>
+                                <td><a href="https://www.ersnet.org/events/virtual-academy-of-adult-respiratory-medicine-2022/" target="_blank">【轉知】<br>Upcoming ERS Paediatric & Adult Virtual Academies</a></td>
+                                <td class="table-number">05-10</td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="bg-white text-center text-primary px-3">大家都在看什麼</h6>
+                    <h1 class="mb-4">每周精選</h1>
+                </div>
+                <div class="container">
+                    <div class="row g-4 justify-content-center pb-3" style="margin-right: 5%;">
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <img class="w-100 weekly-image" src="img/test2.jpg" alt="Image">
+                        </div>
+                        <div class="col-lg-6 col-md-6 wow fadeInUp border border-3 rounded-3" data-wow-delay="0.1s" style="vertical-align: middle;min-height: 460px;">
+                            <div id="weekly-carousel" class="carousel slide" data-bs-interval="false" style="min-height:410px;max-height: 410px;overflow-y: auto;">
+                                <div class="carousel-inner p-3">
+                                    <div class="carousel-item active" id="carousel-page1">
+                                        <h6 class="title-text">Case Presentation</h6>
+                                        <p>A 60-year-old woman who lives in Massachusetts presented to the emergency department in March 2020 with a 5-day history of fevers and chills. She reported no rhinorrhea, sore throat, or loss of smell (anosmia) and no focal neurologic symptoms. She had no rashes or urinary symptoms.
+                                            
+                                            <br><br>The patient recalled no sick contacts, but she had traveled to the United Kingdom 1 month before presentation and to Westchester County, New York, 1 week before presentation. Westchester County had since been recognized as having an outbreak of Covid-19.
+                                            
+                                            <br><br>She was admitted to the hospital during her visit to the emergency department.
+                                        </p>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <h6 class="title-text">Patient History</h6>
+                                        <h6 class="sub-title">Medical History : </h6>
+                                        <ul>
+                                            <li class="text">Hypothyroidism</li>
+                                            <li class="text">Childhood asthma</li>
+                                        </ul>
+
+                                        <h6 class="sub-title">Medications : </h6>
+                                        <p class="text">Levothyroxine, 50 µg, every morning</p>
+
+                                        <h6 class="sub-title">Allergies : </h6>
+                                        <p class="text">No known drug allergies</p>
+
+                                        <h6 class="sub-title">Social History : </h6>
+                                        <ul>
+                                            <li class="text">Lives alone in western Massachusetts</li>
+                                            <li class="text">Works as a professor at a university</li>
+                                            <li class="text">Runs regularly and engages in other athletic activities</li>
+                                            <li class="text">Reports no use of tobacco, alcohol, or intravenous drugs</li>
+                                        </ul>
+
+                                        <h6 class="sub-title">Family History : </h6>
+                                        <ul>
+                                            <li class="text">Father with pulmonary fibrosis</li>
+                                            <li class="text">Brother with lung disease</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <h6 class="title-text">Physical Examination</h6>
+                                        <h6 class="sub-title">Vital signs and general appearance : </h6>
+                                        <ul>
+                                            <li class="text">Temperature, 39.2° C</li>
+                                            <li class="text">Heart rate, 87 beats per minute</li>
+                                            <li class="text">Blood pressure, 108/70 mm Hg</li>
+                                            <li class="text">Respiratory rate, 16 breaths per minute</li>
+                                            <li class="text">Oxygen saturation, 92% while breathing ambient air</li>
+                                            <li class="text">Not in acute distress but appears fatigued</li>
+                                        </ul>
+
+                                        <h6 class="sub-title">Lungs : </h6>
+                                        <ul>
+                                            <li class="text">Bibasilar crackles</li>
+                                            <li class="text">No wheezing or rhonchi</li>
+                                            <li class="text">No tenderness to percussion</li>
+                                            <li class="text">No use of accessory muscles for breathing or respiration</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <h6 class="title-text">What would you do?</h6>
+                                        <p class="text">Which one of the following strategies represents a preferred medical treatment for this patient?</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-outline-info carousel-qna-correct" onclick="carousel_qna_correct('Increase the PEEP');" type="button">
+                                                Increase the PEEP
+                                            </button>
+
+                                            <button class="btn btn-outline-info carousel-qna-wrong" onclick="carousel_qna_wrong('Initiate neuromuscular blockade to paralyze the patient');" type="button">
+                                                Initiate neuromuscular blockade to paralyze the patient
+                                            </button>
+
+                                            <button class="btn btn-outline-info carousel-qna-wrong" onclick="carousel_qna_wrong('Administer inhaled pulmonary vasodilators');" type="button">
+                                                Administer inhaled pulmonary vasodilators
+                                            </button>
+
+                                            <button class="btn btn-outline-info carousel-qna-correct" onclick="carousel_qna_correct('Place the patient in the prone position');" type="button">
+                                                Place the patient in the prone position
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation example align-self-end">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" data-bs-target="#weekly-carousel" data-bs-slide="prev">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#" data-bs-target="#weekly-carousel" data-bs-slide-to="0">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" data-bs-target="#weekly-carousel" data-bs-slide-to="1">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" data-bs-target="#weekly-carousel" data-bs-slide-to="2">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" data-bs-target="#weekly-carousel" data-bs-slide-to="3">4</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" data-bs-target="#weekly-carousel" data-bs-slide="next">Next</a>
+                                    </li>
+                                </ul>
+                            </nav> 
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">聯繫我們</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">622嘉義縣大林鎮民生路二號</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">05-5342601 #2776-2780</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">快速連結</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>每周精選</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>核心課程</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>進階課程</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>主題樂園</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>迷路森林</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>挑戰擂台</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
